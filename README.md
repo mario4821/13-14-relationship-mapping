@@ -16,7 +16,7 @@ This lab is a server build-up using Express and MongoDB. The router makes reques
 
 *Must obtain specific username and password from author.
 
-2. To Post a new Castle to the database, make a POST request.  Successful posts will return a 200 status code to the logs and will send a response to the MongoDB with id.
+2. To POST a new Castle to the database, make a POST request.  Successful posts will return a 200 status code to the logs and will send a response to the MongoDB with id.
 
 ```castleRouter.post('/api/castle', jsonParser, (request, response, next) =>```
 
@@ -28,6 +28,6 @@ This lab is a server build-up using Express and MongoDB. The router makes reques
 
 ```castleRouter.put('/api/castle/:id', jsonParser, (request, response, next) =>```
 
-4. To delete a Castle, make the request with the specific id endpoint. A 200 status code is then logged, along with a response notifying of the deletion. A 404 status code is sent if the Castle does not exist.
+5. To DELETE a Castle, make the request with the specific id endpoint. A 200 status code is then logged, along with a response notifying of the deletion. A 404 status code is sent if the Castle does not exist.
 
 ```castleRouter.delete('/api/castle/:_id', (request, response, next) =>```
